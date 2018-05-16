@@ -6,3 +6,33 @@
   color: #2c3e50;
   margin-top: 60px;
 }
+
+.platform-index {
+    background-color: #719271;
+    width: 70%;
+    max-height: 100%;
+    margin: 0 auto;
+    height: 80vh;
+    border-radius: 42.5px;
+    -moz-box-shadow: -1px 1px 20px 2px #cccccc;
+    -webkit-box-shadow: -1px 1px 20px 2px #cccccc;
+    box-shadow: -1px 1px 20px 2px #cccccc;
+}
+
+.platform-sidebar {
+    width: 35%;
+    background-color: #ffd500;
+    height: 100%;
+    float: left;
+    border-top-left-radius: 42.5px;
+    border-bottom-left-radius: 42.5px;
+}
+
+.platform-content {
+    width: 65%;
+    background-color: #ffffff;
+    height: 100%;
+    float: left;
+    border-top-right-radius: 42.5px;
+    border-bottom-right-radius: 42.5px;
+}
