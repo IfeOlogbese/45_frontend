@@ -18,7 +18,7 @@
                                     <input id="platform-male" type="radio" name="gender" value="male" />
                                     <label class="drinkcard-cc male" for="platform-male"></label>
                                 </div>
-                                <span>Male</span>
+                                <span class="peach-name">Male</span>
                             </div>
 
                             <div class="peachselector">
@@ -26,7 +26,7 @@
                                     <input id="platform-female" type="radio" name="gender" value="female" />
                                     <label class="drinkcard-cc female" for="platform-female"></label>
                                 </div>
-                                <span>Female</span>
+                                <span class="peach-name">Female</span>
                             </div>
                         </div>
                     </div>
@@ -67,7 +67,7 @@
                                     <input id="platform-classic" type="radio" name="group" value="classic" />
                                     <label class="drinkcard-cc group" for="platform-classic"></label>
                                 </div>
-                                <span>Classic</span>
+                                <span class="peach-name">Classic</span>
                             </div>
 
                             <div class="peachselector">
@@ -75,7 +75,7 @@
                                     <input id="platform-silver" type="radio" name="group" value="silver" />
                                     <label class="drinkcard-cc group" for="platform-silver"></label>
                                 </div>
-                                <span>Silver</span>
+                                <span class="peach-name">Silver</span>
                             </div>
 
                             <div class="peachselector">
@@ -83,7 +83,7 @@
                                     <input id="platform-gold" type="radio" name="group" value="gold" />
                                     <label class="drinkcard-cc group" for="platform-gold"></label>
                                 </div>
-                                <span>Gold</span>
+                                <span class="peach-name">Gold</span>
                             </div>
                         </div>
                     </div>

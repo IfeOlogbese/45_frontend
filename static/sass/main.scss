@@ -82,6 +82,7 @@ body {
     padding: 5px;
     position: relative;
     display: inline-block;
+    width: 61%;
 }
 
 .platform-reg-form {
@@ -166,7 +167,7 @@ p{margin-bottom:.3em;}
 
 .eachselector {
     display: inline-block;
-    padding: 10px;
+    padding: 6px;
     border-radius: 100%;
     width: 30px;
     height: 30px;
@@ -181,14 +182,15 @@ p{margin-bottom:.3em;}
 
 .peachselector {
     display: inline-block;
-    margin-right: 35px;
+    margin-right: 25px;
+    position: relative;
+    width: 100px;
 }
 
 .cancel-button {
     width: 120px;
     height: 35px;
     border-radius: 5px;
-    font-size: 16px;
     border-radius: 5.3px;
     background-color: #f5f8f9;
     border: none;
@@ -197,9 +199,9 @@ p{margin-bottom:.3em;}
 
 .save-button {
     width: 120px;
+    color: #ffffff;
     height: 35px;
     border-radius: 5px;
-    font-size: 16px;
     border-radius: 5.3px;
     background-color: #60e6c5;
     border: none;
@@ -209,12 +211,22 @@ p{margin-bottom:.3em;}
 .button-group {
     text-align: right;
     padding-right: 30px;
+    margin-top: 30px;
 }
 
 button {
     outline: none !important;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
 .cc-selector {
     color: #b2c0ce;
+}
+
+.peach-name {
+    position: absolute;
+    top: 36%;
+    right: 0;
 }
