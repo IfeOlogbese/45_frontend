@@ -3,12 +3,15 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html, body
+{
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 #app {
-//   font-family: Arial;
-//   -webkit-font-smoothing: antialiased;
-//   -moz-osx-font-smoothing: grayscale;
-//   text-align: center;
-//   color: #2c3e50;
   margin-top: 60px;
 }
 
@@ -17,11 +20,20 @@ body {
     width: 70%;
     max-height: 100%;
     margin: 0 auto;
-    height: 80vh;
     border-radius: 42.5px;
     -moz-box-shadow: -1px 1px 20px 2px #cccccc;
     -webkit-box-shadow: -1px 1px 20px 2px #cccccc;
     box-shadow: -1px 1px 20px 2px #cccccc;
+}
+
+.platform-index:before,
+.platform-index:after {
+    display: table;
+    content: " ";
+}
+
+.platform-index:after {
+    clear: both;
 }
 
 .platform-sidebar {
@@ -30,20 +42,23 @@ body {
     background-color: #ffd500;
     height: 100%;
     float: left;
+    height: 80vh;
+    position: relative;
+    min-height: 1px;
     border-top-left-radius: 42.5px;
     border-bottom-left-radius: 42.5px;
 }
 
 .platform-content {
     width: 65%;
+    position: relative;
+    min-height: 1px;
     background-color: #ffffff;
     height: 100%;
+    height: 80vh;
     float: left;
     border-top-right-radius: 42.5px;
     border-bottom-right-radius: 42.5px;
-    // overflow: hidden;
-    // overflow-y: scroll;
-    // overflow-x: scroll;
 }
 
 .platform-image-container {
@@ -55,13 +70,13 @@ body {
 }
 
 .platform-label {
-    min-width: 30%;
+    min-width: 20%;
     float: left;
     padding: 10px;
 }
 
 .platform-input {
-    width: 61%;
+    width: 65%;
     height: 21px;
     border-radius: 4px;
     background-color: #f2f3f7;
@@ -137,9 +152,6 @@ body {
     -webkit-transition: all 100ms ease-in;
        -moz-transition: all 100ms ease-in;
             transition: all 100ms ease-in;
-    // -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
-    //    -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
-            // filter: brightness(1.8) grayscale(1) opacity(.7);
 }
 .drinkcard-cc:hover{
     -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
@@ -172,6 +184,7 @@ p{margin-bottom:.3em;}
     width: 30px;
     height: 30px;
     background-color: #ececec;
+    margin-right: 10px;
 }
 
 .eachselector:active,
@@ -182,7 +195,7 @@ p{margin-bottom:.3em;}
 
 .peachselector {
     display: inline-block;
-    margin-right: 25px;
+    // margin-right: 25px;
     position: relative;
     width: 100px;
 }
@@ -210,7 +223,7 @@ p{margin-bottom:.3em;}
 
 .button-group {
     text-align: right;
-    padding-right: 30px;
+    margin-right: 60px;
     margin-top: 30px;
 }
 
@@ -228,5 +241,112 @@ button {
 .peach-name {
     position: absolute;
     top: 36%;
-    right: 0;
+    // right: 0;
+}
+
+@media screen and (max-width: 900px) {
+    .platform-sidebar {
+        width: 100%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 42.5px;
+    }
+
+    .platform-content {
+        width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 42.5px;
+        height: auto;
+    }
+    .platform-index {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .platform-index {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .platform-label,
+    .platform-input,
+    .platform-radio-group {
+        width: 89%;
+    }
+
+    .platform-input,
+    .platform-radio-group {
+        margin: 0 10px;
+    }
+
+    .button-group {
+        margin-bottom: 30px;
+    }
+}
+
+i.arrow {
+    border: solid #ffd500;
+    border-width: 0px 3px 3px 0;
+    display: inline-block;
+    padding: 7px;
+    margin: 0 auto;
+    position: absolute;
+    top: 37%;
+    left: 31%;
+    cursor: pointer;
+}
+
+.arrow-right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.arrow-left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.arrow-up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.arrow-down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.navigator {
+    background-color: #000000;
+    margin: 0 auto;
+    width: 45px;
+    border-radius: 50%;
+    height: 44px;
+    padding: 7px;
+    position: relative;
+}
+
+.platform-text-container {
+    height: 185px;
+}
+
+.platform-world {
+    background-color: #ff9200;
+    height: 80vh;
+    border-bottom-right-radius: 42.5px;
+    border-top-right-radius: 42.5px;
+}
+
+.platform-world h1 {
+    margin: 0;
+}
+
+.plat-text {
+    word-spacing: 7px;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-align: left;
+    padding: 109px 70px 70px;
 }
